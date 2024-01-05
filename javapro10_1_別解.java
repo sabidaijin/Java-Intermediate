@@ -51,7 +51,7 @@ public class javapro10_1_別解 {
             }
             else if (left>=right){
                 return -1;
-            }
+            }//ここまで終了条件ここから継続パターン
             else if (input<randomList.get(mid)){
                 right=mid-1;
                 

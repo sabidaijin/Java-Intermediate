@@ -65,6 +65,8 @@ public class javapro10_1_別解 {
                 return search(left,right,input,randomList);}
             
             return -1;
+            // このreturnには基本的に到達しない。から直前のelse if →elseでもいいけど明示的にするためにこうしている
+
     }
 }
 

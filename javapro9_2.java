@@ -41,13 +41,15 @@ public class javapro9_2 {
         try (BufferedReader br = new BufferedReader(new FileReader(csvFile))) {
             String line;
             br.readLine(); // 一行目（ヘッダー）をスキップ
-
+            // 読み取りがなくなるまで続ける
             while ((line = br.readLine()) != null) {
+                // 一度,で区切られた配列にする
                 String[] values = line.split(",");
                 String day = values[0];
                 int sales = Integer.parseInt(values[2])*Integer.parseInt(values[3]);
 
                 // 日付が異なる場合、合計を出力して新しい日付のデータを開始
+                // もしもdayがkeyの中になかったら
                 if (!sum.containsKey(day)) {
                     if (!sum.isEmpty()) {
                         System.out.println(sum); // 現在の合計を出力

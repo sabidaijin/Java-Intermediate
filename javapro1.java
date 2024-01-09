@@ -9,7 +9,7 @@ public class javapro1{
         int year = Integer.valueOf(input.substring(1,3));
         String personalNumber=input.substring(4);
         
-        // 支店の出力
+        // 支店の出力です
     
         switch(branch){
             case "A":
